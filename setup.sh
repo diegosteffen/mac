@@ -8,21 +8,26 @@ export PATH=/opt/homebrew/bin:$PATH
 brew update
 
 echo Installing basic homebrew softwares...
-brew install git php ruby node npm protobuf redis mysql rabbitmq mercurial wget zsh htop go mackup
+# brew install git php ruby node npm protobuf redis mysql rabbitmq mercurial wget zsh htop go mackup
+brew install git node npm protobuf redis rabbitmq mercurial wget zsh htop mackup
 
 # apps
 echo Installing desktop apps...
-brew install --cask google-chrome iterm2 folx dropbox adobe-acrobat-reader ledger-live textmate skype slack firefox vlc zoom viber microsoft-edge openemu anydesk microsoft-office steam time-out
+# brew install --cask google-chrome iterm2 folx dropbox adobe-acrobat-reader ledger-live textmate skype slack firefox vlc zoom viber microsoft-edge openemu anydesk microsoft-office steam time-out
+brew install --cask google-chrome iterm2 folx adobe-acrobat-reader ledger-live textmate microsoft-edge openemu anydesk time-out
+
 # utils
 echo Installing utilities...
 brew install --cask little-snitch istat-menus clipy grandperspective ipartition rectangle vipriser cd-to blackhole-2ch osxfuse handbrake the-unarchiver textbar adguard android-file-transfer balenaetcher sidequest openkey switchresx
+
 # dev tools
 echo Installing dev tools...
-brew install --cask oracle-jdk docker sequel-ace visual-studio-code goland phpstorm tunnelblick dosbox-x postman wireshark altserver ifunbox sourcetree proxyman android-platform-tools zsh-syntax-highlighting docker
+# brew install --cask oracle-jdk docker sequel-ace visual-studio-code goland phpstorm tunnelblick dosbox-x postman wireshark altserver ifunbox sourcetree proxyman android-platform-tools zsh-syntax-highlighting docker
+brew install --cask oracle-jdk docker sequel-ace visual-studio-code tunnelblick dosbox-x postman wireshark altserver ifunbox sourcetree proxyman zsh-syntax-highlighting docker
 
 # default-writes
 echo Setting default-writes...
-sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ptrinh/macbook-setup/main/default-writes.sh)"
+sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/diegosteffen/mac/main/default-writes.sh)"
 
 cd Downloads
 curl -O https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolors
