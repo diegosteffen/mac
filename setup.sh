@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 echo Installing Rosetta...
-sudo softwareupdate --install-rosetta
+# sudo softwareupdate --install-rosetta
 
 echo Installing Homebrew...
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
