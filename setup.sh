@@ -2,6 +2,8 @@
 echo Installing Rosetta...
 # sudo softwareupdate --install-rosetta
 
+sudo xcode-select --install
+
 echo Installing Homebrew...
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 export PATH=/opt/homebrew/bin:$PATH
