@@ -6,10 +6,10 @@
 ##########################
 
 # Set hostname
-# sudo scutil --set ComputerName "PhilMac"
-# sudo scutil --set HostName "PhilMac"
-# sudo scutil --set LocalHostName "PhilMac"
-# sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "PhilMac"
+# sudo scutil --set ComputerName "STELAB"
+# sudo scutil --set HostName "STELAB"
+# sudo scutil --set LocalHostName "STELAB"
+# sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "STELAB"
 
 # sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Please call me for urgent access."
 
